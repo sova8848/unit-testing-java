@@ -8,22 +8,14 @@
     <artifactId>UnitTesting</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <!-- Set Java version to 1.8 or any version you want to use -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.powermock/powermock-mockito-release-full -->
-        <dependency>
-            <groupId>org.powermock</groupId>
-            <artifactId>powermock-mockito-release-full</artifactId>
-            <version>1.6.4</version>
-            <type>pom</type>
-            <scope>test</scope>
-        </dependency>
-
+        <!-- Your dependencies remain unchanged -->
     </dependencies>
 
     <build>
@@ -31,12 +23,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M7</version>
+                <version>3.0.0-M5</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.apache.maven.surefire</groupId>
                         <artifactId>surefire-junit47</artifactId>
-                        <version>3.0.0-M7</version>
+                        <version>3.0.0-M5</version>
                     </dependency>
                 </dependencies>
             </plugin>
